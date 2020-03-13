@@ -1,12 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
+import Ninjas from './ninjas.js';
 
-
-function App() {
+class App extends Component{
+  render(){
   return (
     <div className="App">
-     <h1>mwelcome every one </h1>
+     <h1>welcome every one </h1>
+     <Ninjas />
     </div>
   );
+}
 }
 
 export default App;
