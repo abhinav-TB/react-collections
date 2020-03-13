@@ -16,18 +16,27 @@
                 name:'Ryu',
                 age:30
             }
-            handleclick(e)
-            {console.log(e.target);
+            handleChange=(e)=>{
+                this.setState({
+                    name:e.target.value
+                });
+    
             }
-            handlemouse(e)
-            {console.log(e)}
+            handlesubmit=(e)=>{
+                e.preventDefault();
+                console.log('form submitted',this.state.name)
+            }
+            
             render(){
                 return(
                     <div className="app-content">
                         <h1>hey ninjas</h1>
                         <p>my name is:{this.state.name}</p>
-                        <button onClick={this.handleclick}>click me</button>
-                        <button onMouseOver={this.handlemouse}>hover me</button>
+                        <form onSubmit={this.handlesubmit}>
+                        <input type="text" onChange={this.handleChange} />
+                        <button>submit</button>
+                        </form>
+
                     </div>
                 )
             }
