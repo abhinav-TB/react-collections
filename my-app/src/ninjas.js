@@ -1,14 +1,16 @@
 import React,{Component} from 'react';
-import App from './App';
+
 
 
 class ninjas extends Component{
     render(){
+        console.log(this.props);
+        const{name,age,belt}=this.props;
         return(
             <div className="ninjas">
-                <div>name:ryu</div>
-                <div>age:30</div>
-                <div>belt:bl</div>
+                <div>name:{name}</div>
+                <div>age:{age}</div>
+                <div>belt:{belt}</div>
             </div>
         )
     }
