@@ -7,7 +7,7 @@ const ninjas=(props)=> {
     const ninjalist =ninjas.map(ninja=>{
         
         return(
-            <div className="ninjas">
+            <div className="ninjas" key={ninja.id}>
                 <div>name:{ninja.name}</div>
                 <div>age:{ninja.age}</div>
                 <div>belt:{ninja.belt}</div>
