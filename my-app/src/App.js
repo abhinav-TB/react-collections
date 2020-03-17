@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Ninjas from './ninjas.js';
 import  Addninja  from "./addninja";
-
+import "./ninjas.css"
 class App extends Component{
   state={
     ninjas :[
