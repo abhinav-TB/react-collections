@@ -13,7 +13,7 @@ class Addninja extends Component{
     }
     handleSubmit =(e)=>{
         e.preventDefault();
-        this.props.addninja(this.state);
+        this.props.addninja(this.state); 
     }
     render(){
         return(
