@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class BookList extends Component {
+  static contextType=ThemeContext;
   render() { 
     return ( 
       <div className="book-list">
